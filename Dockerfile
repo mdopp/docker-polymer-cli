@@ -1,6 +1,6 @@
 #
 # Node.js w/ Bower & Polymer2 Dockerfile
-# - stand 22-02-2017 - neues polymer-cli@next
+#
 
 # Pull base image.
 FROM library/node:7.5.0
@@ -8,7 +8,8 @@ MAINTAINER Michael Dopp <mdopp@web.de>
 
 # Install Bower & Polymer2
 RUN npm install -g bower polymer-cli@next && \
-    echo '{ "allow_root": true }' > /root/.bowerrc
+    echo '{ "allow_root": true }' > /root/.bowerrc \
+    echo 'enforece build - 22.02.2017'.
 
 # Define working directory.
 WORKDIR /data
