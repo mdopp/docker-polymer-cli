@@ -8,8 +8,8 @@ MAINTAINER Michael Dopp <mdopp@web.de>
 
 # Install Bower & Polymer2
 RUN npm install -g bower polymer-cli@next && \
-    echo '{ "allow_root": true }' > /root/.bowerrc \
-    echo 'enforece build - 22.02.2017'.
+    echo '{ "allow_root": true }' > /root/.bowerrc && \
+    echo 'enforece build - 23.02.2017'.
 
 # Define working directory.
 WORKDIR /data
