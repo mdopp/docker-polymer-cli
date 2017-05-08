@@ -3,7 +3,7 @@
 #
 
 # Pull base image.
-FROM library/node:7.5.0
+FROM library/node:7.10.0
 MAINTAINER Michael Dopp <mdopp@web.de>
 
 # Install Bower & Polymer2
